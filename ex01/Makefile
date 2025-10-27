@@ -1,8 +1,8 @@
-NAME	= Animal
-CC		= g++
+NAME	= Brain
+CC		= c++
 CFLAGS	= -Wall -Werror -Wextra -std=c++98
 
-SRCS 	= main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
+SRCS 	= main.cpp src/Animal.cpp src/Dog.cpp src/Cat.cpp src/Brain.cpp
 
 OBJS	= $(SRCS:.cpp=.o)
 
