@@ -14,8 +14,8 @@
 
 Cat::Cat() : Animal()
 {
-	type = "Cat";
 	std::cout << "Cat default constructor called" << std::endl;
+	type = "Cat";
 }
 
 Cat::Cat(const Cat &other) : Animal(other)
@@ -44,8 +44,8 @@ void Cat::makeSound() const
 
 WrongCat::WrongCat() : WrongAnimal()
 {
-	type = "WrongCat";
 	std::cout << "WrongCat default constructor called" << std::endl;
+	type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat &other) : WrongAnimal(other)
