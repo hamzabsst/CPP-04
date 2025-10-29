@@ -6,19 +6,12 @@
 /*   By: hbousset <hbousset@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:51:10 by hbousset          #+#    #+#             */
-/*   Updated: 2025/10/17 09:30:02 by hbousset         ###   ########.fr       */
+/*   Updated: 2025/10/29 18:31:56 by hbousset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-// Polymorphism: How to treat derived class objects through a base class interface.
-
-// virtual Functions: The C++ mechanism to enable polymorphic behavior (dynamic binding).
-
-// Static vs. Dynamic Binding: Understanding when the function call is resolved (at compile-time vs. at run-time).
-
-// Virtual Destructors: The critical importance of virtual destructors in a base class to prevent memory leaks.
 void testBasicPolymorphism()
 {
 	const Animal* meta = new Animal();
