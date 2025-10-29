@@ -22,7 +22,7 @@ Cat::Cat(): Animal()
 Cat::Cat(const Cat &other): Animal(other)
 {
 	std::cout << "Cat Copy Constructor called" << std::endl;
-	_brain = new Brain(*other._brain); // Deep copy
+	_brain = new Brain(*other._brain);
 }
 
 Cat& Cat::operator=(const Cat &other)
@@ -32,7 +32,7 @@ Cat& Cat::operator=(const Cat &other)
 	{
 		Animal::operator=(other);
 		delete _brain;
-		_brain = new Brain(*other._brain); // Deep copy
+		_brain = new Brain(*other._brain);
 	}
 	return *this;
 }
