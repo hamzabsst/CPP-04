@@ -22,7 +22,7 @@ Dog::Dog(): Animal()
 Dog::Dog(const Dog &other): Animal(other)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
-	_brain = new Brain(*(other._brain)); // Deep copy
+	_brain = new Brain(*(other._brain));
 }
 
 Dog& Dog::operator=(const Dog &other)
@@ -32,11 +32,11 @@ Dog& Dog::operator=(const Dog &other)
 	{
 		Animal::operator=(other);
 		delete _brain;
-		_brain = new Brain(*other._brain); //Deep copy
+		_brain = new Brain(*other._brain);
 	}
 	return *this;
 }
-
+// Deep copy
 Dog::~Dog()
 {
 	std::cout << "Dog destructor called" << std::endl;
